@@ -69,17 +69,31 @@
 			
 		</div>
 	</header> <!--End of header -->
-	
-	
-	
 	<section id="banner" class="banner">
-<!--      		<img class="img img-responsive" src="images/equilibria.png"/>-->
-			<div class="single_banner_text wow zoomIn" data-wow-duration="3s">
-				<h2>National Symposium</h2>
-				<p>BIOPRODUCT DESIGN, DEVELOPMENT AND MANAGEMENT</p>
+		<main>
+			<div class="content">
+				<canvas class="scene scene--full" id="scene"></canvas>
+				<script type="x-shader/x-vertex" id="wrapVertexShader">
+					#define PI 3.1415926535897932384626433832795
+					attribute float size;
+					void main() {
+						vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+						gl_PointSize = 3.0;
+						gl_Position = projectionMatrix * mvPosition;
+					}
+				</script>
+				<script type="x-shader/x-fragment" id="wrapFragmentShader">
+					uniform sampler2D texture;
+					void main(){
+						vec4 textureColor = texture2D( texture, gl_PointCoord );
+						if ( textureColor.a < 0.3 ) discard;
+						vec4 dotColor = vec4(0.06, 0.18, 0.36, 0.4);
+						vec4 color = dotColor * textureColor;
+						gl_FragColor = color;
+					}
+				</script>
 			</div>
-			<a class="btn" href="#">Register Now</a>
-		
+		</main>
 	</section><!-- End of Banner Section -->
 	
 	
@@ -743,5 +757,9 @@
 	
 	<script type="text/javascript" src="js/mixitup/jquery.mixitup.min.js"></script>
 	<script type="text/javascript" src="js/masonry/masonry.pkgd.min.js"></script>
+	<script>{setTimeout(() => document.body.classList.add('render'), 600);}</script>
+	<script src="js/three.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/demo2.js"></script>
 </body>
 </html>
