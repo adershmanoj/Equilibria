@@ -255,7 +255,6 @@ a:hover {
     text-transform: uppercase;
     font-size: 10px;
     color: #438482;
-    text-align: right;
     text-decoration: none;
 }
 
@@ -298,15 +297,15 @@ a:hover {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #313131;
+    color: #5b9e6c;
     font-weight: 700;
     letter-spacing: 2px;
     font-size: 14px;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    color: #313131;
-    opacity: 0.6;
+    color: #3af195;
+    opacity: 0.8;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -341,7 +340,7 @@ a:hover {
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .close.navbar-nav>.active>a:focus {
-    color: #313131;
+    color: #30ff2e;
     opacity: 0.9;
 }
 
@@ -461,15 +460,16 @@ a:hover {
     color: #fff;
 }
 .jumbotron a{
-	z-index: 999;
-	background: linear-gradient(225deg, #58BA52 0%, #2F8F83 100%);
-    transition: all .4s;
+	z-index: 2;
+	position: relative;
+	background: linear-gradient(225deg, #146565 0%, #428e39 100%);
+    transition: color .4s ease-in, font-size .4s ease-in;
     border: none;
     border-radius: 50px;
     width: 200px;
 }
 .jumbotron a:hover{
-	background: linear-gradient(225deg, #2F8F83 0%, #58BA52 100%);
+	background: linear-gradient(225deg, #428e39 0%, #146565 100%);
 }
 .title {
     display: inline;
@@ -971,7 +971,7 @@ hr {
 /*---------------------------------------------------------------*/
 .footer {
     height: 100px;
-    background-color: #486164;
+    background-color: #1c2d1e;
 }
 
 .footer h4 {
