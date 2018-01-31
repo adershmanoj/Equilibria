@@ -779,7 +779,12 @@ ul#example li p {
     padding-right: 35px;
     margin-bottom: 40px;
 }
-
+.webdesign a{
+	color: #fff;
+  background-color: #41a04e;
+  border-color: #41a04e;
+	transition: all 0.3s ease;
+}
 .copywriting {
     padding-left: 35px;
     padding-right: 35px;
