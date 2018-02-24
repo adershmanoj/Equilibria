@@ -8,11 +8,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Evogen</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Biotechnology department SCTCE" />
-	<meta name="keywords" content="evogen biotechnology sct" />
-	<meta name="author" content="adershmanoj" />
- 
 	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -20,25 +18,23 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 	<link rel="stylesheet" href="css/style.css">
 
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+
 	</head>
 	<body>
 	<header>
 		<div class="container text-center">
 			<div class="fh5co-navbar-brand">
-				<a class="fh5co-logo" href="index.html">EVOGEN</a>
+				<a class="fh5co-logo" href="index.html">Evogen</a>
 			</div>
 			<nav id="fh5co-main-nav" role="navigation">
 				<ul>
-					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="equilibria.html">Equilibria</a></li>
 					<li><a href="institution.html">Institution</a></li>
 					<li><a href="department.html">Department</a></li>
@@ -46,24 +42,65 @@
 					<li><a href="gallery.html">Gallery</a></li>
 					<li><a href="downloads.html">Downloads</a></li>
 					<li><a href="faculty.html">Faculty</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="contact.html" class="active">Contact</a></li>
 
 				</ul>
 			</nav>
 		</div>
 	</header>
-
-	<div id="fh5co-intro-section">
+	<div class="fh5co-parallax" style="background: url(images/logo.png)center no-repeat;" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<h2>About Evogen</h2>
-					<p>The young association of biotechnology department students of SCTCE was established in 2014, with the basic objective of empowering students of biotechnology, through creation of a conducive environment for them to exress their basic basic skill sets as well as to aid them in developing new skills which could help them in fullfilling their commitment towards the society by pursuing a fullfilling career in the area of Biotechnology and to aid them in spreading the spirit of Biotechnology so as to take this venerable discipline to newer heights in the days ahead.</p>
-					<p>Under EVOGEN, we were able to successfully conduct National Science Day Celebrations, Ozone Celebrations, etc by arranging events like bio quizzes, poster presentation, expert lectures and workshops using the fund sanctioned by <strong>Kerala State Council for Science Technology and Environment (KSCTSE)</strong>, <strong>CMFRI</strong>, <strong>Bharat Petroleum</strong>, <strong>Indian Oil</strong>. We were also able to organise a National level symposium <strong>Equilibria 2016</strong> on Advances in Biosciences &amp; Bioengineering and <strong>Equilibria 2017</strong> on Trends &amp; prospects in Bio-Science and Technology towards Sustainability</p>
+				<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+					<div class="fh5co-intro fh5co-table-cell">
+						<h1 class="text-center">Contact Us</h1>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div><!-- end fh5co-intro-section -->
+	</div><!-- end: fh5co-parallax -->
+	<div id="fh5co-contact-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 animate-box">
+					<h3>Our Address</h3>
+					<ul class="contact-info">
+						<li><i class="icon-location-pin"></i>SCT College of Engineering, Pappanamcode</li>
+						<li><i class="icon-phone2"></i>9074048796</li>
+						<li><i class="icon-mail"></i><a href="mailto:contact@evogen.co.in">contact@evogen.co.in</a></li>
+						<li><i class="icon-globe2"></i><a href="http://evogen.co.in">evogen.co.in</a></li>
+					</ul>
+				</div>
+				<div class="col-md-8 animate-box">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Name">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Email">
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<input type="submit" value="Send Message" class="btn btn-primary">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="map" class="fh5co-map animate-box"></div>
+	<!-- END map -->
 	<footer>
 		<div id="footer" class="fh5co-border-line">
 			<div class="container">
@@ -84,8 +121,11 @@
 	<script src="js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
 	<!-- Owl carousel -->
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/google_map.js"></script>
 	<!-- Stellar -->
 	<script src="js/jquery.stellar.min.js"></script>
 
