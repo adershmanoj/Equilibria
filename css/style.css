@@ -120,6 +120,9 @@ header {
 header .fh5co-navbar-brand {
   padding-bottom: 3em;
 }
+header .fh5co-navbar-brand img {
+	margin-top: -20px;
+}
 header .fh5co-navbar-brand .fh5co-logo {
   position: relative;
   font-size: 50px;
