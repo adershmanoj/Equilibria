@@ -309,11 +309,11 @@ body {
 .home-page {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2000;
-		overflow: hidden;
 }
 
 /* ( b ) Introduction Section */
@@ -363,11 +363,12 @@ body {
     color: #BCC747;
 }
 
-.intro-content h4 {
+.intro-content h2 {
     color: #fff;
+    text-decoration: underline;
     text-align: center;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 30px;
 }
 
 .social-media {
@@ -408,7 +409,7 @@ body {
 
 .menu > div {
     width: 100%;
-    height: 14.28%;
+    height: 25%;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -511,17 +512,13 @@ body {
                       -------------------------------------------------*/
 
 .profile-page,
-.institution-page,
 .resume-page,
 .portfolio-page,
-.gallery-page,
-.downloads-page,
 .contact-page {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-		display: none;
 }
 
 .image-container {
@@ -572,6 +569,7 @@ body {
 /* ( a ) Story of Glory */
 
 .profile-page .image-container {
+    background: url(../images/background/profile_image.jpg);
     background-size: cover;
     background-position: bottom;
 }
@@ -680,23 +678,19 @@ body {
     text-align: center;
     padding: 50px 15px;
 }
-.facts p{
-	margin-bottom: 20px;
-}
 
                     /*-----------------
                        8 ) Resume Page
                       -----------------*/
 
 /* ( a ) Education Section */
+
 .resume-page .image-container {
+    background: url(../images/background/resume_image.jpg);
     background-size: cover;
     background-position: bottom;
 }
-.institution-page .image-container {
-    background-size: cover;
-    background-position: bottom;
-}
+
 .education-container {
     position: relative;
     margin-bottom: 50px;
@@ -878,6 +872,7 @@ body {
 /* ( a ) Portfolio Section */
 
 .portfolio-page .image-container {
+    background: url(../images/background/portfolio_image.jpg);
     background-size: cover;
     background-position: bottom;
 }
@@ -888,7 +883,7 @@ body {
 }
 
 .filter {
-    background: #396736;
+    background: none;
     border: 1px solid #BCC747;
     color: #BCC747;
     margin: 10px 0;
@@ -917,13 +912,13 @@ body {
 .projet-items {
     padding: 20px;
 }
+
 /*----- Hover Effect Portfolio Image --------*/
 
 .project {
     width: 100%;
     overflow: hidden;
-    margin-top: 15px;
-		margin-bottom: 20px;
+    margin: 15px 0;
     position: relative;
     -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
@@ -933,6 +928,7 @@ body {
 .project img {
     position: relative;
     width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
 }
@@ -1067,23 +1063,15 @@ body {
 /*----- Popup Sty;es [ END ] --------*/
 
 /* ( b )  Testimonial Section */
-.gallery-page .content-container{
-	left: 0;
-}
+
 .testimonials {
     background: #BCC747;
 }
-#gallery .item img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
+
 .testimonials h2 {
     color: #fff;
 }
-.testimonials-container  p{
-	margin-bottom: 0;
-} 
+
 .testimonials-container {
     padding: 20px;
 }
@@ -1104,10 +1092,7 @@ body {
     color: #fff;
     text-align: center;
 }
-.downloads-page .image-container {
-    background-size: cover;
-    background-position: bottom;
-}
+
                     /*-------------------
                        10 ) Contact Page
                       -------------------*/
@@ -1115,6 +1100,7 @@ body {
 /* ( a )  Contact Form */
 
 .contact-page .image-container {
+    background: url(../images/background/contact_image.jpg);
     background-size: cover;
     background-position: bottom;
 }
