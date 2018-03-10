@@ -214,6 +214,7 @@ $(document).ready(function () {
 
     $(function () {
         $(".owl-carousel").owlCarousel({
+						lazyLoad: true,
             navigation: false, // Show next and prev buttons
             slideSpeed: 200,
             paginationSpeed: 300,
